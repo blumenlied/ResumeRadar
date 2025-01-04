@@ -48,4 +48,4 @@
 	<meta name="description" content="Results page" />
 </svelte:head>
 
-<canvas class="fixed shadow-md rounded-md mr-6 max-h-[780px]"id="the-canvas"></canvas>
+<canvas class="motion-delay-700 motion-opacity-in-0 motion-translate-x-in-[-50%] motion-blur-in-md fixed shadow-md rounded-md mr-6 max-h-[780px]"id="the-canvas"></canvas>
