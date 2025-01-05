@@ -2,7 +2,7 @@ import json
 import os
 import base64
 
-from modules.pdf import parse, clean_text
+from modules.pdf import parse, cleaner
 from modules.gemini import grade
 from modules.create_report import generate_resume_grade_pdf
 from fastapi import FastAPI, Form, File, UploadFile
@@ -33,7 +33,7 @@ async def process_resume(
     try:
         resume_pdf_file = await resume.read()
         resume_text = parse(resume_pdf_file)
-        job_description = clean_text(job_description)
+        job_description = cleaner(job_description)
 
         scores = grade(resume_text, job_description)
 

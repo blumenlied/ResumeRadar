@@ -5,7 +5,7 @@ from cleantext import clean
 
 def cleaner(text):
     return clean(
-        "some input",
+        text,
         fix_unicode=True,  # fix various unicode errors
         to_ascii=True,  # transliterate to closest ASCII representation
         lower=False,  # lowercase text
@@ -20,12 +20,7 @@ def cleaner(text):
         lang="en",  # set to 'de' for German special handling
     )
 
-
-def clean_text(text):
-    return clean(text)
-
-
 def parse(pdf: bytes):
     pdf_file = io.BytesIO(pdf)
     text = extract_text(pdf_file)
-    return clean(text)
+    return cleaner(text)
