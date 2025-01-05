@@ -37,7 +37,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-- Start back-end
+- Start backend
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 80
 ```
