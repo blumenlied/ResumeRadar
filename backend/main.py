@@ -41,7 +41,7 @@ async def process_resume(
             return JSONResponse(content=scores, status_code=400)
 
         report_filename = (
-            "/home/stephen/myrepo/resume/front/src/lib/pdf/ResumeRadarReport.pdf"
+            "../frontend/src/lib/pdf/ResumeRadarReport.pdf"
         )
         generate_resume_grade_pdf(scores, filename=report_filename)
 
