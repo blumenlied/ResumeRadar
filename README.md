@@ -20,6 +20,12 @@ python -m venv env
 pip install -r requirements.txt
 ```
 
+- Obtain a Gemini API key and securely store it in a .env file for configuration management.
+```bash
+# .env
+MY_API_KEY="key"
+```
+
 - Install front-end dependencies
 ```bash
 cd frontend
