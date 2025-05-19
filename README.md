@@ -16,7 +16,8 @@ cd ResumeRadar
 
 - Create a Python Virtual Environment and install Python dependencies.
 ```bash
-python -m venv env
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
